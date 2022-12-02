@@ -1,14 +1,13 @@
 user_number = int(input())
 
-number = []
-s = 0
+s = 1
 
 while True:
-    for i in range(len(number)+1):
-        s = s * i
+    for i in range(user_number):
+        s = s * (i+1)
         if s == user_number:
             print("yes")
-            break
+            exit()
         if s > user_number:
             print("no")
             exit()
